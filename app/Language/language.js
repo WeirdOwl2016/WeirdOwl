@@ -1,9 +1,9 @@
 /**
 *
  */ 
-import * as test from './CH/test';
+import * as test from './EN/test';
 
-const ch = {
+const en = {
     ...test 
 }
 
@@ -11,13 +11,13 @@ const ch = {
  */
 const language = (code) => {  
   if(code){
-        if(ch[code]){
-            return ch[code];
+        if(en[code]){
+            return en[code];
         }else{
             return null;
         }
     }else{
-        return ch;
+        return en;
     }
 }  
   
