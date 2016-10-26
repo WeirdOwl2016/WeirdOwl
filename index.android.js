@@ -12,8 +12,13 @@ import {
   View
 } from 'react-native';
 
-export default class WeirdOwl extends Component {
+import language from './app/Language/language';
+import color from './app/color/color';
+
+export default class WeirdOwl extends Component { 
   render() {
+    let my =  language('MY');
+    let my1 =  color('COFFEE_COLOR_1');
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -24,7 +29,7 @@ export default class WeirdOwl extends Component {
         </Text>
         <Text style={styles.instructions}>
           Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
+          Shake or press menu button for dev menu:{my}:{my1}
         </Text>
       </View>
     );
