@@ -14,12 +14,12 @@ import {
 } from 'react-native';
 
 import language from './app/Language/language';
-import color from './app/color/color';
+import color from './app/theme/coffee/color';
 
 export default class WeirdOwl extends Component { 
   render() {
     let my =  language('MY');
-    let my1 =  color('COFFEE_COLOR_1');
+    let my1 =  color('COLOR_1');
     let img = '/logo.jpg';
     let img2 = './img'+img;
     const img3 = './img/logo.jpg';
